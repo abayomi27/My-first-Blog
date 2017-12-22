@@ -11,9 +11,11 @@
     <title>My Blog</title>
 </head>
 <body>
+{% if user.authenticated %}
     <div class="page-header">
         <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span> </a>
         <h1><a href="/">Abayomi's Blog</a></h1>
+{% endif %}
 
     </div>
     <div class="content container">
